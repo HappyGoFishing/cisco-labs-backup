@@ -13,22 +13,24 @@ install_configuration() {
 	echo "installing labs in ~/labs"
 	cd ~
 	git clone https://github.com/KieranCrossland/cisco-labs-backup labs
-
+	echo ""
 	echo "Cisco packet tracer is not in any repositories, you will have to install it seperately."
+ 	echo "install completed"
 
 }
 
 main() {
+    echo "(Kieran Crossland 2023)"
     echo "Hello and welcome to Cisco VM configuration script."
     echo "Would you like to proceed with the installation? (yes/no)"
     read answer
-    if [ "$answer" = "yes" ]; then
-        echo "Starting installation."
+	if [ "$answer" = "yes" ]; then
+		echo "Starting installation."
 		install_configuration
-    else
-        echo "Installation aborted."
+	else
+        	echo "Installation aborted."
 		exit
-    fi
+    	fi
 }
 
 main
