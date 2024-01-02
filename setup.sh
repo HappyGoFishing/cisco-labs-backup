@@ -21,7 +21,7 @@ install_configuration() {
 }
 
 main() {
-    echo "(Kieran Crossland 2023)"
+    echo "(Kieran Crossland, Denys Dreyzer, Damian Kaminski, Shafi-al Islam. 2023)"
     echo "Hello and welcome to Cisco VM configuration script."
     echo "Would you like to proceed with the installation? (yes/no)"
     read answer
